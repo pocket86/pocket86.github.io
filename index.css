@@ -2,7 +2,7 @@ nav{
     height: 100px
 }
 .nav-wrapper{
-    background-color: #01579b; 
+    background-color: #545454; 
 }
 .brand-logo.left{
     height: 50px;
@@ -20,3 +20,30 @@ nav ul a{
     width: 100px !important;
     padding-top: 15px ! important;
 }
+
+.tabs .indicator{ 
+    background-color: black ;
+}
+
+.tabs .tab a{
+    color: blue;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active{
+    color: green;
+}
+div.col.s12.m6{
+    width: 100%;
+    height: 650px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 30px;
+}
+div.card.blue-grey.darken-1{
+    height: 100%;
+    text-align: center;
+}
+
+
+
+

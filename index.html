@@ -13,19 +13,47 @@
     <link rel="stylesheet" type="text/css" href="index.css"> </head>
 
 <body>
-    
     <!-- Navigation Bar -->
     <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo left">Weston Clark</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li class="active"><a href="collapsible.html">Link 3</a></li>
-      </ul>
+        <div class="nav-wrapper"> <a href="#!" class="brand-logo left">Weston Clark</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li class="active"><a href="collapsible.html">Link 3</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Tabs Section -->
+    <h3>Click the tabs</h3>
+    <div class="row">
+        <div class="col s12">
+            <ul class="tabs">
+                <li class="tab col s3"><a href="#inbox">Inbox</a></li>
+                <li class="tab col s3"><a class="active" href="#unread">Unread</a></li>
+                <li class="tab col s3 disabled"><a href="#outbox">Outbox (Disabled)</a></li>
+                <li class="tab col s3"><a href="#sent">Sent</a></li>
+            </ul>
+        </div>
+        
+        <!-- Tab Content -->
+        <div id="inbox" class="col s12">
+            <!-- Embeded Card -->
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text"> <span class="card-title">Card Title</span>
+                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action"> <a href="#">This is a link</a> <a href="#">This is a link</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="unread" class="col s12">Unread</div>
+        <div id="outbox" class="col s12">Outbox (Disabled)</div>
+        <div id="sent" class="col s12">Sent</div>
     </div>
-  </nav>
-  
 </body>
 
 </html>
