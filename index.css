@@ -1,7 +1,19 @@
-h1{
-    color: red;
+nav{
+    height: 100px
 }
-
-p{
-    color: blue;
+.nav-wrapper{
+    background-color: #01579b; 
+}
+.brand-logo.left{
+    height: 50px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.right.hide-on-med-and-down{
+    height: 100px;
+    padding-right: 20px;
+}
+nav ul a{
+    height: 100px;
+    padding-top: 15px ! important;
 }
