@@ -36,8 +36,8 @@ nav ul a{
     color: blue;
 }
 div.col.s12{
-    width: 90% !important;
-    margin: auto !important;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 div.col.s12.m6{
     width: 100%;
