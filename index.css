@@ -23,6 +23,9 @@ nav ul a{
     width: 100px !important;
     padding-top: 15px ! important;
 }
+h3{
+    margin-left: 20px;
+}
 
 .tabs .indicator{
     background-color: black ;
@@ -45,6 +48,7 @@ div.col.s12.m6{
     padding-left: 70px;
     padding-right: 70px;
     padding-top: 30px;
+    text-align: center;
 }
 div.card.blue-grey.darken-1{
     height: 100%;
