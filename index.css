@@ -67,11 +67,12 @@ div.col.s12.m6{
     text-align: center;
 }
 div.card{
-    max-width: 500px;
+    max-width: 900px;
     margin: auto;
+    margin-top: 50px;
 }
 .card .card-image img{
-    width: 200px;
+    width: 400px;
     display: inline;
     padding-top: 20px;
 }
