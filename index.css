@@ -30,6 +30,7 @@ h3{
 }
 .tabs{
     background-color: aliceblue;
+    max-width: 1500px;
 }
 
 .tabs .indicator{
@@ -71,6 +72,9 @@ div.card{
     max-width: 900px;
     margin: auto;
     margin-top: 50px;
+}
+img{
+    max-width: 400px;
 }
 .card .card-image img{
     width: 400px;
