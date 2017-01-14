@@ -39,10 +39,14 @@ h3{
     color: blue;
 }
 div.col.s12{
+
+    text-align: center;
+
     padding-right: 50px;
     padding-left: 50px;
     padding-top: 30px;
 }
+
 div.col.s12.m6{
     width: 100%;
     height: 650px;
@@ -54,12 +58,19 @@ div.col.s12.m6{
 .tabs .tab a{
     width: 75%;
 }
-div.card.blue-grey.darken-1{
-    height: 100%;
-    text-align: center;
+.card-image.waves-effect.waves-block.waves-light{
+
 }
 .card .card-image img{
     width: 200px;
+    display: inline;
+    padding-top: 10px;
+}
+.card .card-content{
+    text-align: center;
+}
+ul:not(.browser-default){
+    padding-left: 30px;
 }
 
 
