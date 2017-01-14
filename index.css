@@ -1,6 +1,8 @@
 body{
     font-family: 'Josefin Sans', sans-serif;
+    background-color:aliceblue;
 }
+
 nav{
     height: 100px
 }
@@ -9,7 +11,7 @@ nav{
 }
 .brand-logo.left{
     height: 50px;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-left: 20px;
 }
 .right.hide-on-med-and-down{
@@ -21,10 +23,13 @@ nav ul a{
     text-align: center;
     height: 100px;
     width: 100px !important;
-    padding-top: 15px ! important;
+    padding-top: 20px ! important;
 }
 h3{
     margin-left: 20px;
+}
+.tabs{
+    background-color: aliceblue;
 }
 
 .tabs .indicator{
@@ -58,16 +63,23 @@ div.col.s12.m6{
 .tabs .tab a{
     width: 75%;
 }
-.card-image.waves-effect.waves-block.waves-light{
-
+.col.s12{
+    text-align: center;
+}
+div.card{
+    max-width: 500px;
+    margin: auto;
 }
 .card .card-image img{
     width: 200px;
     display: inline;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 .card .card-content{
     text-align: center;
+}
+.card .card-content .card-title{
+    padding-left: 100px;
 }
 ul:not(.browser-default){
     padding-left: 30px;
