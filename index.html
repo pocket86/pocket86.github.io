@@ -3,62 +3,74 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
+
     <title>Home Page | pocket86.gethub.io</title>
-    <!-- Compiled and minified CSS -->
+
+    <!-- Compiled and minified CSS for materialize framework -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-    <!--Import jQuery before materialize.js-->
+    <!--jQuery for materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <!-- Compiled and minified JavaScript -->
+    <!-- Compiled and minified JavaScript for materialize framework-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <!-- My stylesheet -->
     <link rel="stylesheet" type="text/css" href="index.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    </head>
+</head>
 
 <body>
     <!-- Navigation Bar -->
     <nav>
         <div class="nav-wrapper"> <a href="#!" class="brand-logo left">Weston Clark</a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li class="active"><a href="collapsible.html">Link 3</a></li>
+                <li><a href="https://twitter.com/pocket_86" target="_blank">Twitter</a></li>
+                <li><a href="https://plus.google.com/u/0/+WestonClark" target="_blank">Google+</a></li>
+                <li><a href="collapsible.html">Link 3</a></li>
             </ul>
         </div>
     </nav>
 
-    <h3>About Me</h3>
-
     <!-- Tabs Section -->
-    <div class="row">
-        <div class="col s12">
-            <ul class="tabs">
-                <li class="tab col s3"><a href="#bio">Bio</a></li>
-                <li class="tab col s3"><a href="#family">Family</a></li>
-                <li class="tab col s3"><a href="#school">School</a></li>
-                <li class="tab col s3"><a href="#">#</a></li>
-            </ul>
-        </div>
+    <main>
+        <div class="row">
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s3"><a href="#bio">Bio</a></li>
+                    <li class="tab col s3"><a href="#family">Family</a></li>
+                    <li class="tab col s3"><a href="#school">School</a></li>
+                    <li class="tab col s3"><a href="#placeholder">#</a></li>
+                </ul>
+            </div>
 
-        <!-- Tab  & Content -->
-        <div id="bio" class="col s12">
-            <!-- Embeded Card -->
-            <div class="row">
-                <div class="col s12 m6">
-                    <div class="card grey darken-3">
-                        <div class="card-content white-text"> <span class="card-title">Weston Clark - Who Am I?</span>
-                            <hr/>
-                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                        </div>
-                        <div class="card-action"> <a href="#">This is a link</a> <a href="#">This is a link</a> </div>
+            <!-- Tab  & Content -->
+            <div id="bio" class="col s12">
+                <!-- Embeded Card -->
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="resources/me.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
                     </div>
                 </div>
+
+
+
             </div>
+            <div id="family" class="col s12">Here will be information about my family</div>
+            <div id="school" class="col s12">Here will be information about my school/major and future career</div>
+            <div id="placeholder" class="col s12">Sent</div>
         </div>
-        <div id="family" class="col s12">Here will be information about my family</div>
-        <div id="school" class="col s12">Here will be information about my school/major and future career</div>
-        <div id="#" class="col s12">Sent</div>
-    </div>
+    </main>
+
+
 </body>
 
 </html>

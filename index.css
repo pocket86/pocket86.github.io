@@ -41,6 +41,7 @@ h3{
 div.col.s12{
     padding-right: 50px;
     padding-left: 50px;
+    padding-top: 30px;
 }
 div.col.s12.m6{
     width: 100%;
@@ -50,9 +51,15 @@ div.col.s12.m6{
     padding-top: 30px;
     text-align: center;
 }
+.tabs .tab a{
+    width: 75%;
+}
 div.card.blue-grey.darken-1{
     height: 100%;
     text-align: center;
+}
+.card .card-image img{
+    width: 30%;
 }
 
 
