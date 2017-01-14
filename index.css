@@ -62,6 +62,7 @@ div.col.s12.m6{
 }
 .tabs .tab a{
     width: 75%;
+    font-size: 20px;
 }
 .col.s12{
     text-align: center;
