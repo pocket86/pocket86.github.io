@@ -80,7 +80,7 @@ div.card{
     text-align: center;
 }
 .card .card-content .card-title{
-    padding-left: 100px;
+    padding-left: 50px;
 }
 ul:not(.browser-default){
     padding-left: 30px;
