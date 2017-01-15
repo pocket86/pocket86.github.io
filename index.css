@@ -73,9 +73,7 @@ div.card{
     margin: auto;
     margin-top: 50px;
 }
-img{
-    max-width: 400px;
-}
+
 .card .card-image img{
     width: 400px;
     display: inline;
@@ -89,6 +87,16 @@ img{
 }
 ul:not(.browser-default){
     padding-left: 30px;
+}
+.carousel{
+    background-color: aliceblue; 
+}
+div.carousel.initialized{
+   
+}
+.carousel .carousel-item img{
+    width: auto;
+    max-height: 300px;
 }
 
 
