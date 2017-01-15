@@ -69,7 +69,7 @@ div.col.s12.m7 {
     width: 100%;
     padding-left: 70px;
     padding-right: 70px;
-    padding-top: 10px;
+    padding-top: 0px;
     text-align: center;
 }
 div.col.s12.m5 {
@@ -96,7 +96,7 @@ div.card {
 }
 
 .card .card-image img {
-    height: 400px;
+    height: 500px;
     width: auto;
     display: inline;
     padding-top: 20px;
@@ -121,7 +121,7 @@ img.activator {
 }
 
 #famPic {
-    height: 400px;
+    height: 500px;
     width: auto;
 }
 .cardText{
