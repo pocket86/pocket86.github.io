@@ -1,0 +1,169 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: aliceblue;
+}
+
+nav {
+    height: 100px
+}
+
+.nav-wrapper {
+    background-color: #545454;
+}
+
+.brand-logo.left {
+    height: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.right.hide-on-med-and-down {
+    height: 100px;
+    padding-right: 20px;
+}
+
+nav ul a {
+    text-align: center;
+    height: 100px;
+    width: 100px !important;
+    padding-top: 20px ! important;
+}
+
+h3 {
+    margin-left: 20px;
+}
+
+.tabs {
+    background-color: aliceblue;
+    max-width: 1500px;
+}
+
+.tabs .indicator {
+    width: 18%;
+    background-color: black;
+}
+
+.tabs .tab a {
+    color: lightslategray;
+}
+
+.tabs .tab a:hover,
+.tabs .tab a.active {
+    color: blue;
+}
+
+div.col.s12 {
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+div.col.s12.m6 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 30px;
+    text-align: center;
+}
+div.col.s12.m7 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 0px;
+    text-align: center;
+}
+div.col.s12.m5 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: center;
+}
+
+.tabs .tab a {
+    width: 100%;
+    margin: auto;
+    font-size: 20px;
+}
+li.tab.col.s3{
+    width: 18%;;
+}
+
+.col.s12 {
+    text-align: center;
+}
+
+div.card {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+div.card-panel{
+    max-width: 900px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.card .card-image img {
+    height: 500px;
+    width: auto;
+    padding-left: 35px;
+    display: inline;
+    padding-top: 40px;
+}
+
+.card .card-content {
+    text-align: center;
+}
+
+.card .card-content .card-title {
+    padding-left: 50px;
+}
+
+img.activator {
+    padding-right: 30px;
+}
+
+#famPic {
+    height: 500px;
+    width: auto;
+}
+.cardText{
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+    font-size: 17px;
+}
+.author{
+    padding-left: 30px;
+    padding-top: 20px;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+}
+
+ul:not(.browser-default) {
+    padding-left: 30px;
+}
+
+.carousel {
+    background-color: aliceblue;
+}
+.carousel .carousel-item img {
+    width: auto;
+    max-height: 300px;
+}
+footer{
+    background-color: #9e9e9e ;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 25px;
+    margin-top: 100px;
+    color:white;
+    text-align: center;
+}
