@@ -3,8 +3,44 @@ body {
     background-color: aliceblue;
 }
 
+.side-navigation{
+    z-index: 0;
+    width: 170px;
+    height: 100%;
+    position: absolute;
+    display: inline;
+    text-align: center;
+    background-color: #252525;
+}
+.spacer{
+    margin-top: 100px;
+}
+.navText{
+    color: white;
+    font-size: 20px;
+    height: 40px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+}
+
+.list-link{
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    display: inline;
+    text-decoration: underline;
+}
+
+.body-container {
+    margin-left: 170px;
+}
+
 nav {
-    height: 100px
+    z-index: 1;
+    width: 100%;
+    height: 70px;
 }
 
 .nav-wrapper {
@@ -12,38 +48,39 @@ nav {
 }
 
 .brand-logo.left {
-    height: 50px;
-    padding-top: 20px;
+    height: 40px;
     padding-left: 20px;
+    padding-top: 5px;
 }
 
 .right.hide-on-med-and-down {
-    height: 100px;
+    height: 70px;
     padding-right: 20px;
 }
 
 nav ul a {
     text-align: center;
-    height: 100px;
+    height: 70px;
     width: 100px !important;
-    padding-top: 20px ! important;
-}
-
-h3 {
-    margin-left: 20px;
+    padding-top: 5px;
 }
 
 .tabs {
     background-color: aliceblue;
-    max-width: 1500px;
+    max-width: 80%;
 }
 
 .tabs .indicator {
+    margin: auto;
+    margin-left: 25px;
+    width: 20%;
     background-color: black;
 }
 
 .tabs .tab a {
     color: lightslategray;
+    width: 100%;
+    font-size: 20px;
 }
 
 .tabs .tab a:hover,
@@ -58,13 +95,6 @@ div.col.s12 {
     padding-top: 30px;
 }
 
-div.col.s12.m6 {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-top: 30px;
-    text-align: center;
-}
 div.col.s12.m7 {
     width: 100%;
     padding-left: 70px;
@@ -72,16 +102,12 @@ div.col.s12.m7 {
     padding-top: 0px;
     text-align: center;
 }
+
 div.col.s12.m5 {
     width: 100%;
     padding-left: 70px;
     padding-right: 70px;
     text-align: center;
-}
-
-.tabs .tab a {
-    width: 75%;
-    font-size: 20px;
 }
 
 .col.s12 {
@@ -93,7 +119,8 @@ div.card {
     margin: auto;
     margin-top: 50px;
 }
-div.card-panel{
+
+div.card-panel {
     max-width: 900px;
     margin: auto;
     margin-top: 20px;
@@ -106,7 +133,7 @@ div.card-panel{
     padding-top: 20px;
 }
 
-.card.horizontal .card-image img{
+.card.horizontal .card-image img {
     padding-left: 10px;
     padding-bottom: 20px;
     height: auto;
@@ -128,7 +155,8 @@ img.activator {
     height: 500px;
     width: auto;
 }
-.cardText{
+
+.cardText {
     font-size: 17px;
 }
 
@@ -136,22 +164,16 @@ ul:not(.browser-default) {
     padding-left: 30px;
 }
 
-.carousel {
-    background-color: aliceblue;
-}
-.carousel .carousel-item img {
-    width: auto;
-    max-height: 300px;
-}
-footer{
-    background-color: #9e9e9e ;
-    z-index: 1;
+footer {
+    z-index: -2;
+    background-color: #9e9e9e;
     position: fixed;
     width: 100%;
     bottom: 0;
     left: 0;
+    margin-left: 100px;
     height: 25px;
     margin-top: 100px;
-    color:white;
+    color: white;
     text-align: center;
 }
