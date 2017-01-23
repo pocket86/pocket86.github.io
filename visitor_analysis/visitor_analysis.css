@@ -13,10 +13,6 @@ body {
     background-color: #252525;
 }
 
-.spacer {
-    margin-top: 100px;
-}
-
 .navText {
     color: white;
     font-size: 20px;
@@ -36,16 +32,21 @@ body {
 }
 
 .body-container {
+    margin-top: 70px;
     margin-left: 170px;
 }
 
 nav {
+    top: 0;
+    left: 0;
+    position: fixed;
     z-index: 4;
     width: 100%;
     height: 70px;
 }
 
 .nav-wrapper {
+    position: fixed;
     z-index: 4;
     background-color: #545454;
 }
@@ -127,6 +128,7 @@ div.card {
     max-width: 900px;
     margin: auto;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 div.card-panel {
@@ -154,6 +156,16 @@ div.card-panel {
 
 .card .card-content .card-title {
     padding-left: 50px;
+}
+.pText{
+    font-size: 17px;
+    text-align: left;
+}
+span.pTextHeader{
+    font-weight: bold;
+}
+div.indent{
+    padding-left: 20px;
 }
 
 img.activator {
