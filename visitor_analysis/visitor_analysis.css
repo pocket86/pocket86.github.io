@@ -6,9 +6,9 @@ body {
 .side-navigation {
     z-index: 2;
     width: 170px;
-    height: 100%;
-    position: absolute;
-    display: inline;
+    height: 200%;
+    position:fixed;
+    display:inline;
     text-align: center;
     background-color: #252525;
 }
