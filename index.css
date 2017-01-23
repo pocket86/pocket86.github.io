@@ -6,7 +6,7 @@ body {
 .side-navigation {
     z-index: 0;
     width: 170px;
-    height: 200%;
+    height: 120%;
     position: absolute;
     display: inline;
     text-align: center;
