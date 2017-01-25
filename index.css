@@ -4,13 +4,13 @@ body {
 }
 
 .side-navigation {
-    z-index: 0;
+    z-index: -1;
     width: 170px;
     height: 120%;
     position: absolute;
     display: inline;
     text-align: center;
-    background-color: #252525;
+    background-color: #252525;  
 }
 
 .spacer {
@@ -35,25 +35,31 @@ body {
     text-decoration: underline;
 }
 
-.body-container {
-    margin-left: 170px;
-}
-
 nav {
+    background-color: #545454;
     z-index: 1;
+    display: flex;
     width: 100%;
     height: 70px;
 }
 
-.nav-wrapper {
-    background-color: #545454;
+.top-nav-content{
+    color: white;
+    font-size: 40px;
+    padding-left: 20px;
+    padding-top: 10px;
+    display: flex;
+}
+top-nav-links{
+    color: wite;
 }
 
-.brand-logo.left {
-    height: 40px;
-    padding-left: 20px;
-    padding-top: 5px;
+.body-container {
+    margin-left: 170px;
 }
+
+
+
 
 .right.hide-on-med-and-down {
     height: 70px;
