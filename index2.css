@@ -27,10 +27,10 @@ body{
 .top-nav-item:nth-child(1){
     width: 250px;
     min-width: 250px;
-    padding-top: 15px;
+    padding-top: 25px;
     padding-left: 15px;
 }
-     /* spacer */
+
 .top-nav-item:nth-child(3){
     width: 300px;
 }
@@ -38,6 +38,7 @@ body{
 .top-nav-link{
     width: 100px;
     font-size: 15px;
+    padding-top: 5px;
     transition: background-color 0.5s ease;
 }
 .top-nav-link:hover{
@@ -70,7 +71,7 @@ body{
     color: white;
     text-align: center;
     height: 40px;
-    
+
 }
      /* spacer */
 .side-nav-item:nth-child(1){
@@ -117,9 +118,9 @@ footer{
     z-index: -2;
     width: 100%;
     background-color: #d9d9d9;
-    color: white;
+    color: darkslategrey;
     text-align: center;
-    padding-left: 170px;
+    padding-left: 50px;
     padding-top: 2px;
     padding-bottom: 2px;
 }
@@ -136,8 +137,15 @@ footer{
     flex-direction: column;
 }
 
+/**** TABS ****/
+
+.tabs{
+    background-color: slategrey;
+    height: 100px;
+}
+
 .content-spacer{
-    height: 150px;
+    height: 50px;
 }
 
 .card{
@@ -147,7 +155,7 @@ footer{
     width: 700px;
     border-radius: 2px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
-    margin-left: 370px;
+    margin-left: 500px;
 }
 
 
