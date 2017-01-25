@@ -142,11 +142,24 @@ footer{
 .tabs{
     background-color: slategrey;
     height: 100px;
+    width: 70%;
+    margin: auto;
+    margin-left: 300px;
+    display: flex;
+}
+
+.tab-item{
+    border: solid;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 
 .content-spacer{
     height: 50px;
 }
+
+/**** CARD ****/
 
 .card{
     z-index: -2;
