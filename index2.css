@@ -23,6 +23,7 @@ body{
 
 .top-nav-item:nth-child(1){
     width: 250px;
+    min-width: 250px;
     padding-top: 15px;
     padding-left: 15px;
 }
@@ -50,6 +51,7 @@ body{
 }
 
 /*********** SIDE NAV BAR ************/
+
 .side-nav{
     background-color: #252525;
     position: fixed;
@@ -57,4 +59,23 @@ body{
     top:0;
     height: 100%;
     width: 170px;
+    display: flex;
+    flex-direction: column;
 }
+
+.side-nav-item{
+    color: white;
+    text-align: center;
+}
+     /* spacer */
+.side-nav-item:nth-child(1){
+    height: 100px;
+}
+
+.side-nav-item:nth-child(2){
+    font-size: 20px;
+    height: 40px;
+    border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+}
+
+
