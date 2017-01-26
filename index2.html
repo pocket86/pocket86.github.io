@@ -10,7 +10,22 @@
     <!-- My stylesheet -->
     <link rel="stylesheet" type="text/css" href="index2.css">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> </head>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
+    
+    
+    <script>
+    
+        function tabChange(tabName){
+            var tabs = document.getElementsByClassName("card");
+            for(var i = 0; i < tabs.length; i++){
+                tabs[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "flex";
+        }
+    
+    </script>
+    
+</head>
 
 <body>
 
@@ -43,10 +58,10 @@
         <div class="tab-wrapper">
             <div class="tab-spacer"></div>
             <div class="tabs">
-                <div class="tab-item">Tab 1</div>
-                <div class="tab-item">Tab 2</div>
-                <div class="tab-item">Tab 3</div>
-                <div class="tab-item">Tab 4</div>
+                <a class="tab-item" href="#" onclick="tabChange('bio')">Bio</a>
+                <a class="tab-item" href="#" onclick="tabChange('family')">Family</a>
+                <a class="tab-item" href="#" onclick="tabChange('school')">School</a>
+                <a class="tab-item" href="#" onclick="tabChange('contact')">Contact</a>
             </div>
             <div class="tab-spacer"></div>
         </div>
@@ -55,10 +70,10 @@
         <div class=content-spacer></div>
         <div class="card-wrapper">
             <div class="card-spacer"></div>
-            <div class="card">
+            <div class="card" id="bio">
                 <div class="card-item">Hello World!</div>
                 <img class="card-item" src="resources/me_ji.jpeg">
-                <div class="card-item"></div>
+                <div class="card-item border"></div>
                 <p class="card-item">
                     My name is Weston Clark. I was born on February 2nd (yes, that's Groundhog's Day), 1988 - year of the dragon!<br/><br/>
                     I grew up in the little town of <a href="https://goo.gl/VY8L8h" target="_blank">Lyman, Wyoming</a>, population 2k!<br/><br/>
@@ -67,13 +82,50 @@
                     We love it here and have loved the experience of attending this University, but we are also ready to move on to the next chapter and see what adventures life has in store for us next!
                 </p>
             </div>
+            
+            <div class="card" id="family">
+                <div class="card-item">My Family</div>
+                <div class=pic-frame>
+                    <img class="card-item" id="pic-frame" src="resources/ryan_erin.jpg">
+                    <img class="card-item" id="pic-frame" src="resources/ji_erin.jpg">
+                </div>
+                <div class="card-item border"></div>
+                <p class="card-item">
+                    I have been married now for 7 years. I first met my wife in South Korea (she is Korean, as you might assume). We were engaged for 4 months before getting married in the Salt Lake City LDS Temple.<br/><br/>
+                    Since then, we have spent much time back and forth across the globe visiting family and exploring this wonderful world, including Hong Kong, China, Thailand, the Philippines, and Mexico. My family slowly-but-surely growing family has been living in Rexburg now for 5 years while I attend school.<br/><br/>
+                    Over the years we have grown in size to a family of 4 3/4 (the new baby is due in 3 weeks). We have a wonderful son, Ryan, who is 5 years old, and a beautiful daughter, Erin, who is 3.
+                </p>
+            </div>
+            
+            <div class="card" id="school">
+                <div class="card-item">School</div>
+                <div class=pic-frame>
+                    <img class="card-item school-logo" src="resources/byui_logo.png">
+                </div>
+                <div class="card-item border"></div>
+                <p class="card-item">
+                    I began attending BYU-Idaho in January of 2012. I am a Computer Science major.<br/><br/>
+                    I am a programmer at heart - I love to code! I have gained such a great education at this University This, however, is my last semester here before I graduate. I have accepted a full time job offer wtih USAA as a software developer in San Antonio, TX - something that I would never have accomplished without this education!
+                </p>
+                <div class="card-item"><a id="byui-link" href="https://www.byui.edu" target="_blank">BYU-Idaho Home Page</a></div>
+            </div>
+            
+            <div class="card" id="contact">
+                <div class="card-item">Contact</div>
+                <div class="card-item border"></div>
+                <p class="card-item contact">
+                    Weston Clark<br/><br/>
+                    Phone: 208.346.2344<br/>
+                    Email: clark.westonp@gmail.com<br/><br/>
+                    Availability: Mon-Fri, 10:00am - 6:00pm
+                </p>
+            </div>
+            
             <div class="card-spacer"></div>
         </div>
         <div class=content-spacer></div>
 
     </main>
-
-
 
 
 
@@ -84,6 +136,17 @@
            © 2017 | Last Update: 1/14/2017
         </div>
     </footer>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 </body>
 
