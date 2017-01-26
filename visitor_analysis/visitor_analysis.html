@@ -5,184 +5,217 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width">
-    <title>Visitor Analysis | pocket86.gethub.io</title>
-    <!-- Compiled and minified CSS for materialize framework -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-    <!-- Icons used with marterialize (mostly for the cards) -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--jQuery for materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <!-- Compiled and minified JavaScript for materialize framework-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <title>Visitor Analysis 2.0 | pocket86.gethub.io</title>
+
     <!-- My stylesheet -->
-    <link rel="stylesheet" type="text/css" href="visitor_analysis.css">
+    <link rel="stylesheet" type="text/css" href="visitor_analysis2.css">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> </head>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
+    
+    
+    <script>
+        //this is a simple functin to allow the tabs to work. 
+        function tabChange(tabName){
+            var tabs = document.getElementsByClassName("card");
+            for(var i = 0; i < tabs.length; i++){
+                tabs[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "flex";
+        }
+    </script>
+    
+</head>
 
 <body>
-    <!-- Side Nav - Assignments -->
-    <div class="side-navigation">
-        <p class="navText">Assignments</p>
-        <div>
-            <br/>
-            <p><a class="list-link" href="../index.html">Home Page / About Me</a></p>
-            <p><a class="list-link" href="../design_principles_assessment/design_principles_assessment.html">Design Principles Assessment</a></p>
-            <p><a class="list-link" href="">Mobile Site Visitor Analysis</a></p>
+
+    <!-- Top Nav Bar -->
+    <div class="top-nav">
+        <div class="top-nav-item">Mobile Site Visitor Analysis</div>
+        <div class="top-nav-item"></div>
+        <div class="top-nav-item">
+            <div class="top-nav-link"><a class="top-link" target="_blank" href="https://goo.gl/hyxUoq">Twitter</a></div>
+            <div class="top-nav-link"><a class="top-link" target="_blank" href="https://goo.gl/oa1vc7">Google+</a></div>
+            <div class="top-nav-link"><a class="top-link" target="_blank" href="https://goo.gl/kRpoue">Linkedin</a></div>
         </div>
     </div>
-    <!-- Top Nav Bar -->
-    <nav>
-        <div class="nav-wrapper"> <a href="" class="brand-logo left">Mobile Site Visitor Analysis</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="https://twitter.com/pocket_86" target="_blank">Twitter</a></li>
-                <li><a href="https://plus.google.com/u/0/+WestonClark" target="_blank">Google+</a></li>
-                <li><a href="https://goo.gl/kRpoue" target="_blank">Linkedin</a></li>
-            </ul>
+
+    <!-- Side Nav Bar -->
+    <div class="side-nav">
+        <div class="side-nav-item"></div>
+        <div class="side-nav-item">Assignments</div>
+        <div class="side-nav-item"></div>
+        <div class="side-nav-link"><a class="side-link" href="../index.html">Home Page / About Me</a></div>
+        <div class="side-nav-link"><a class="side-link" href="#">Visitor Analysis</a></div>
+        <div class="side-nav-link"><a class="side-link" href="../design_principles_assessment/design_principles_assessment.html">Design Principals</a></div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="content">
+
+        <!-- Tabs -->
+        <div class="content-spacer"></div>
+        <div class="tab-wrapper">
+            <div class="tab-spacer"></div>
+            <div class="tabs">
+                <a class="tab-item" href="#" onclick="tabChange('target')">Target Audience</a>
+                <a class="tab-item" href="#" onclick="tabChange('persona')">Persona</a>
+                <a class="tab-item" href="#" onclick="tabChange('contrast')">Contrast</a>
+            </div>
+            <div class="tab-spacer"></div>
         </div>
-    </nav>
-    <div class="body-container">
-        <!-- Tabs Section -->
-        <main>
-            <div class="row">
-                <div class="col s12">
-                    <ul class="tabs">
-                        <li class="tab col s3"><a href="#target">Target Audience</a></li>
-                        <li class="tab col s3"><a href="#persona">Persona</a></li>
-                        <li class="tab col s3"><a href="#contrast">Contrast</a></li>
-                    </ul>
-                </div>
-                <!-- Tabs & Content -->
-                <div id="target" class="col s12">
-                    <!-- Card -->
-                    <div class="card">
-                       
-                        <div class="card-image "> <img src="resources/typeform.png"> </div>
-                        <div class="card-content"> <span class="card-title grey-text text-darken-4">Website: <a href="https://www.typeform.com/" target="_blank">www.typeform.com</a></span>
-                            <div class="card-action"></div>
-                            
-                            <div class="pText"> 
-                                <span class="pTextHeader">
-                                    1) What are their demographics? Age, Income, Education, Geographic Location.
-                                </span><br/>
-                                <div class="indent">
-                                        <p>
-                                            Technically, the typeform service could be utilized by anyone, however the site is promoted as a business solution. This being the case, they are targeting an audience of men and women in the work field, ranging in age anywhere from 18 to 65. Education is most likely a college 4-year degree in something relating to business or communications. Geographic location could be anywhere, as this service is an online tool.
-                                        </p>
-                                </div><br/>
-                                <span class="pTextHeader">
-                                    2) How did the site meet the needs of the visitor (be specific in terms of "Less is More)?
-                                </span><br/>
-                                <div class="indent">
-                                        <p>
-                                            This site does a good job at presenting information about the capabilities of the product. Although there is a lot of information to present, the mobile site does so in a clean, organized way that makes the site easy to navigate and understand.
-                                        </p>
-                                </div><br/>
-                                <span class="pTextHeader">
-                                    3) Describe how the content was organized to facilitate it being found?
-                                </span><br/>
-                                <div class="indent">
-                                        <p>
-                                            The mobile site makes great use of a slideing side-navigation panel. There is an obvious indicator to press to expand the panel, and listed on it are very logially-ordered links to different parts of the site, including "Home", "Examples", "Getting Started", etc.
-                                        </p>
-                                </div><br/>
-                                <span class="pTextHeader">
-                                    4) What did the site do to make the mobile experience enjoyable (or at least not painful)?
-                                </span><br/>
-                                <div class="indent">
-                                        <p>
-                                            In my opinion, the site was very enjoyable due to it's clean, uncluttered layout, the logical layout (following an order of 'what is it, what is it for, how do I use it, etc), and easy navigation. The size of links and buttons are also a big plus (large icons for pressing with fingers).
-                                        </p>
-                                </div><br/>
-                                <span class="pTextHeader">
-                                    5) Did the site seem to facilitate people in a mobile environment (Think about the descriptions in teh Visitor Considerations reading)? If "Yes", how?
-                                </span><br/>
-                                <div class="indent">
-                                        <p>
-                                            The site does facilitate those in a mobile environment. It does this by changing a wep page full of information and options in a very clean and presentable form. I feel like the mobile site, in all reality, would server more as a stepping stone for people to learn about the services offered, and once the potential customer is hooked, they will turn to the desktop site to learn more and invest.
-                                        </p>
-                                </div><br/>
-                            </div>
-                        </div>
+
+        <!-- Card -->
+        <div class=content-spacer></div>
+        <div class="card-wrapper">
+            <div class="card-spacer"></div>
+            <div class="card" id="target">
+                <div class="card-item">Website: <a target="_blank" href="https://typeform.com">www.typeform.com</a></div>
+                <img class="card-item" src="resources/typeform.png">
+                <div class="card-item border"></div>
+                <div class="card-item" id="card-text">
+                    <span class="question">
+                        1) What are their demographics? Age, Income, Education, Geographic Location.
+                    </span>
+                    <br/>
+                    <div class="indent">
+                        <p>
+                            Technically, the typeform service could be utilized by anyone, however the site is promoted as a business solution. This being the case, they are targeting an audience of men and women in the work field, ranging in age anywhere from 18 to 65. Education is most likely a college 4-year degree in something relating to business or communications. Geographic location could be anywhere, as this service is an online tool.
+                        </p>
                     </div>
-                </div>
-                
-                <div id="persona" class="col s12">
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image "> <img src="resources/persona.jpg"> </div>
-                        <div class="card-content"> <span class="card-title grey-text text-darken-4">Stephen DeShazer</span>
-                            <div class="card-action"></div>
-                            <div class="pText">
-                                <p> 
-                                    Stephen is a 28 year old recent college grad. His degree was in buisness with a minor in communications. He has a passion for technology and has had goals to learn web design, but never finds the free time.
-                                    <br/><div class="indent"><br/></div>
-                                    Stephen is single, but in a long term relationship with his girlfriend. He lives in a one-bedroom studio apartment with his dog, Sabation.
-                                    <br/><div class="indent"><br/></div>
-                                    Stephen has been working at Data Smart, a market research firm, for just over 1 year now. Stephen's main job inclues working with clients to design great survey's and questionairs to use based on their needs. The surveys are mostely online, and he usually has to rely on 3rd party frameworks and templates to get the look he is after, although if he knew how to design the pages himself, they would be much better.
-                                    <br/><div class="indent"><br/></div>
-                                    Stephen has recently been asked by his manager to come up with a more elegant design for a survey for one of their more frequent clients. 
-                                </p>
-                            </div>
-                        </div>
+                    <br/>
+                    <span class="question">
+                        2) How did the site meet the needs of the visitor (be specific in terms of "Less is More)?
+                    </span>
+                    <br/>
+                    <div class="indent">
+                        <p>
+                            This site does a good job at presenting information about the capabilities of the product. Although there is a lot of information to present, the mobile site does so in a clean, organized way that makes the site easy to navigate and understand.
+                        </p>
                     </div>
-                </div>
-                <div id="contrast" class="col s12">
-                    <!-- Card -->
-                    <div class="card">
-                       
-                        <div class="card-image "> <img src="resources/contrast.png"> </div>
-                        <div class="card-content"> <span class="card-title grey-text text-darken-4">Website: <a href="https://www.scotch.io" target="_blank">www.scotch.io</a></span>
-                            <div class="card-action"></div>
-                            
-                            <div class="pText"> 
-                                <span class="pTextHeader">
-                                    1) What was the worst site you came across during the 24 hour mobile browsing experience (list it's name and url)?
-                                </span><br/>
-                                <div class="indent">
-                                        <p>
-                                           The worst site I came across during my 24 hours of browsing was www.scotch.io. This was dissapointing, as scotch.io is a wonderful site for developers to learn about lots of things, specifically about web design and frameworks. It's sad that their mobiel page has so many issues :'(
-                                        </p>
-                                </div><br/>
-                                <span class="pTextHeader">
-                                    2) How did your best site differ from the worst in knowing who their target audience was?
-                                </span><br/>
-                                <div class="indent">
-                                        <p>
-                                            www.typeforms.com seems to know their audience a tad bit better - if somseone is looking for an elegant solution to forms, the site advertizing it better well be elegant as well. On the other hand, www.scotch.io <span style="font-style:italic">should</span> know their audience, as they are advertizing to developers. They might, however, be expecting developers to be on a desktop where they would be writing the code they are learning about.  
-                                        </p>
-                                </div><br/>
-                                <span class="pTextHeader">
-                                    3) How did your best site differ from the worst in meeting the needs of their audience?
-                                </span><br/>
-                                <div class="indent">
-                                        <p>
-                                            Like was stated in the question above, I think www.typeforms did a slightly better job here. This was lagely in part to their easy to navigate menu and organized content. Scotch.io, however, has design issues that make navigating the site difficult, if not impossoble, therefore impeding the needs of the user altogether. 
-                                        </p>
-                                </div><br/>
-                                <span class="pTextHeader">
-                                    4) How did your best site differ from the worst in organizing content to facilitate it being found?
-                                </span><br/>
-                                <div class="indent">
-                                        <p>
-                                            This is where I feel www.typeforms.com excells the most - the content is well organized and easy to find what you need in an oder that makes sense. As stated above, scotch.io's navigation (although great on their desktop site) is a mess and is almost impossible to use.
-                                        </p>
-                                </div><br/>
-                                <span class="pTextHeader">
-                                    5) How did your best site differ from the worst in facilitating visitors in a mobile environment?
-                                </span><br/>
-                                <div class="indent">
-                                        <p>
-                                           I feel like www.typeforms.com really put time into making sure mobile users had a good experience and knew that a large part of their site visitors would be doing so on a mobiel device. Scotch.io, on the other hand, feels like all the effort went into the desktop site and they just kind of hoped it would work on mobile without actually putting any though into it.  
-                                        </p>
-                                </div><br/>
-                            </div>
-                        </div>
+                    <br/>
+                    <span class="question">
+                        3) Describe how the content was organized to facilitate it being found?
+                    </span>
+                    <br/>
+                    <div class="indent">
+                        <p>
+                            The mobile site makes great use of a slideing side-navigation panel. There is an obvious indicator to press to expand the panel, and listed on it are very logially-ordered links to different parts of the site, including "Home", "Examples", "Getting Started", etc.
+                        </p>
                     </div>
+                    <br/>
+                    <span class="question">
+                        4) What did the site do to make the mobile experience enjoyable (or at least not painful)?
+                    </span>
+                    <br/>
+                    <div class="indent">
+                        <p>
+                            In my opinion, the site was very enjoyable due to it's clean, uncluttered layout, the logical layout (following an order of 'what is it, what is it for, how do I use it, etc), and easy navigation. The size of links and buttons are also a big plus (large icons for pressing with fingers).
+                        </p>
+                    </div>
+                    <br/>
+                    <span class="question">
+                        5) Did the site seem to facilitate people in a mobile environment (Think about the descriptions in the Visitor Considerations reading)? If "Yes", how?
+                    </span>
+                    <br/>
+                    <div class="indent">
+                        <p>
+                            The site does facilitate those in a mobile environment. It does this by changing a wep page full of information and options in a very clean and presentable form. I feel like the mobile site, in all reality, would server more as a stepping stone for people to learn about the services offered, and once the potential customer is hooked, they will turn to the desktop site to learn more and invest.
+                        </p>
+                    </div>
+                    <br/>
                 </div>
             </div>
-            <footer> © 2017 | Last Update: 1/14/2017 </footer>
-        </main>
-    </div>
+            
+            
+            
+            <div class="card" id="persona">
+                <div class="card-item">Stephen DeShazer</div>
+                <img class="card-item" src="resources/persona.jpg">
+                <div class="card-item border"></div>
+                <p class="card-item" id="card-text">
+                    Stephen is a 28 year old recent college grad. His degree was in buisness with a minor in communications. He has a passion for technology and has had goals to learn web design, but never finds the free time.
+                    <br/><br/>
+                    Stephen is single, but in a long term relationship with his girlfriend. He lives in a one-bedroom studio apartment with his dog, Sabation.
+                    <br/><br/>
+                    Stephen has been working at Data Smart, a market research firm, for just over 1 year now. Stephen's main job inclues working with clients to design great survey's and questionairs to use based on their needs. The surveys are mostely online, and he usually has to rely on 3rd party frameworks and templates to get the look he is after, although if he knew how to design the pages himself, they would be much better.
+                    <br/><br/>
+                    Stephen has recently been asked by his manager to come up with a more elegant design for a survey for one of their more frequent clients.
+                </p>
+            </div>
+            
+            <div class="card" id="contrast">
+                <div class="card-item">Website: <a target="_blank" href="https://scotch.io">www.scotch.io</a></div>
+                <img class="card-item school-logo" src="resources/contrast.png">
+                <div class="card-item border"></div>
+                <div class="card-item" id="card-text">
+                    <span class="question">
+                        1) What was the worst site you came across during the 24 hour mobile browsing experience (list it's name and url)?
+                    </span>
+                    <br/>
+                    <div class="indent">
+                        <p>
+                            The worst site I came across during my 24 hours of browsing was www.scotch.io. This was dissapointing, as scotch.io is a wonderful site for developers to learn about lots of things, specifically about web design and frameworks. It's sad that their mobiel page has so many issues :'(
+                        </p>
+                    </div>
+                    <br/>
+                    <span class="question">
+                        2) How did your best site differ from the worst in knowing who their target audience was?
+                    </span>
+                    <br/>
+                    <div class="indent">
+                        <p>
+                            www.typeforms.com seems to know their audience a tad bit better - if somseone is looking for an elegant solution to forms, the site advertizing it better well be elegant as well. On the other hand, www.scotch.io <span style="font-style:italic">should</span> know their audience, as they are advertizing to developers. They might, however, be expecting developers to be on a desktop where they would be writing the code they are learning about.
+                        </p>
+                    </div>
+                    <br/>
+                    <span class="question">
+                        3) How did your best site differ from the worst in meeting the needs of their audience?
+                    </span>
+                    <br/>
+                    <div class="indent">
+                        <p>
+                            Like was stated in the question above, I think www.typeforms did a slightly better job here. This was lagely in part to their easy to navigate menu and organized content. Scotch.io, however, has design issues that make navigating the site difficult, if not impossoble, therefore impeding the needs of the user altogether.
+                        </p>
+                    </div>
+                    <br/>
+                    <span class="question">
+                        4) How did your best site differ from the worst in organizing content to facilitate it being found?
+                    </span>
+                    <br/>
+                    <div class="indent">
+                        <p>
+                           This is where I feel www.typeforms.com excells the most - the content is well organized and easy to find what you need in an oder that makes sense. As stated above, scotch.io's navigation (although great on their desktop site) is a mess and is almost impossible to use.
+                        </p>
+                    </div>
+                    <br/>
+                    <span class="question">
+                        5) How did your best site differ from the worst in facilitating visitors in a mobile environment?
+                    </span>
+                    <br/>
+                    <div class="indent">
+                        <p>
+                           I feel like www.typeforms.com really put time into making sure mobile users had a good experience and knew that a large part of their site visitors would be doing so on a mobiel device. Scotch.io, on the other hand, feels like all the effort went into the desktop site and they just kind of hoped it would work on mobile without actually putting any though into it.
+                        </p>
+                    </div>
+                    <br/>
+                </div>
+            </div>
+            
+           
+            
+            <div class="card-spacer"></div>
+        </div>
+        <div class=content-spacer></div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+           © 2017 | Last Update: 1/14/2017
+        </div>
+    </footer>
+ 
 </body>
 
 </html>
