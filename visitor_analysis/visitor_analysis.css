@@ -187,15 +187,11 @@ a.tab-item{
     flex-direction: column;
 }
 
-#target{
-    display:none;
-}
-
 #persona{
     display: none;
 }
 #contrast{
-    display: ;
+    display: none;
 }
 
 .card-item{
