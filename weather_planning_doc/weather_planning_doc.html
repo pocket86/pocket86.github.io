@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Weather App Planning Docs | pocket86.gethub.io</title>
+
+    <!-- My stylesheet -->
+    <link rel="stylesheet" type="text/css" href="weather_planning_doc.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
+    
+    
+    <script>
+        //this is a simple functin to allow the tabs to work. 
+        function tabChange(tabName){
+            var tabs = document.getElementsByClassName("card");
+            for(var i = 0; i < tabs.length; i++){
+                tabs[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "flex";
+        }
+    </script>
+    
+</head>
+
+<body>
+
+    <!-- Top Nav Bar -->
+    <div class="top-nav">
+        <div class="top-nav-item">Weather App Planning Docs</div>
+        <div class="top-nav-item"></div>
+        <div class="top-nav-item">
+            <div class="top-nav-link"><a class="top-link" target="_blank" href="https://goo.gl/hyxUoq">Twitter</a></div>
+            <div class="top-nav-link"><a class="top-link" target="_blank" href="https://goo.gl/oa1vc7">Google+</a></div>
+            <div class="top-nav-link"><a class="top-link" target="_blank" href="https://goo.gl/kRpoue">Linkedin</a></div>
+        </div>
+    </div>
+
+    <!-- Side Nav Bar -->
+    <div class="side-nav">
+        <div class="side-nav-item"></div>
+        <div class="side-nav-item">Assignments</div>
+        <div class="side-nav-item"></div>
+        <div class="side-nav-link"><a class="side-link" href="../index.html">Home Page / About Me</a></div>
+        <div class="side-nav-link"><a class="side-link" href="../visitor_analysis/visitor_analysis.html">Visitor Analysis</a></div>
+        <div class="side-nav-link"><a class="side-link" href="../design_principles_assessment/design_principles_assessment.html">Design Principals</a></div>
+        <div class="side-nav-link"><a class="side-link" href="#">Weather App Planning Doc</a></div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="content">
+
+        <!-- Tabs -->
+        <div class="content-spacer"></div>
+        <div class="tab-wrapper">
+            <div class="tab-spacer"></div>
+            <div class="tabs">
+                <a class="tab-item" href="#" onclick="tabChange('purpose')">Purpose</a>
+                <a class="tab-item" href="#" onclick="tabChange('audience')">Audience</a>
+                <a class="tab-item" href="#" onclick="tabChange('persona')">Persona</a>
+                <a class="tab-item" href="#" onclick="tabChange('wireframe')">Wireframes</a>
+                <a class="tab-item" href="#" onclick="tabChange('review')">Peer Review</a>
+            </div>
+            <div class="tab-spacer"></div>
+        </div>
+
+        <!-- Card -->
+        <div class=content-spacer></div>
+        <div class="card-wrapper">
+            <div class="card-spacer"></div>
+            <div class="card" id="purpose">
+                <div class="card-item">Purpose Statement</div>
+                <div class="card-item border"></div>
+                <p class="card-item" id="card-text">
+                    The purpose of this site and application is to display the weather as (and the faux app name implies) as clearly and simply as possible. This includes the obviously important current temprature, the high and low for that day, the chance of precipitation, and the wind speed and direction. When more screen real estate is available, the temprature timeline for the day is displayed, and the desktop version of the site includes the 5 day forcast. 
+                </p>
+            </div>
+            
+            
+            
+            <div class="card" id="audience">
+                <div class="card-item">Audience</div>
+                <div class="card-item border"></div>
+                <p class="card-item" id="card-text">
+                    The target audience for this site includes those who like quick, "glancable" information - no fancy gimics or animations - just simple and easy to read information. This group may include those with employment and a busy schedule, those who travel lots but don't have much leisure time, or those who simply just enjoy a minimalistic interface and simplicity. 
+                </p>
+            </div>
+            
+            <div class="card" id="persona">
+                <div class="card-item">Persona</a></div>
+                <img class="card-item school-logo" src="resources/business-man.jpg">
+                <div class="card-item border"></div>
+                <p class="card-item" id="card-text">
+                    Name: Benjamin Lancaster<br/>
+                    Age: 36<br/>
+                    Occupation: Business Consultant<br/><br/>
+                    Description<br/>
+                    Ben is a busy man - he works freelance and that means he never knows when or where he will be next. He has clients in many different states across the U.S. and even an international client. Ben is no stranger to frequent travel. One personality trait that he has developed throughout his career is speed and simplicity. If it takes too long or is too complicated, it's not worth doing. Ben feels his simple and fast lifestyle is what keeps him feeling young and brings a feeling of success to all his endevors. 
+                    Ben is a busy man - he works freelance and that means he never knows when or where he will be next. He has clients in many different states across the U.S. and even an international client. Ben is no stranger to frequent travel. One personality trait that he has developed throughout his career is speed and simplicity. If it takes too long or is too complicated, it's not worth doing. Ben feels his simple and fast lifestyle is what keeps him feeling young and brings a feeling of success to all his endevors. 
+                </p>
+            </div>
+        
+        <div class="card" id="wireframe">
+                <div class="card-item">Wireframe Sketches</a></div>
+                    <div class="card-item border"></div>
+                    <p class="card-item"> Mobiel Display: Portrait</p>
+                    <img class="wireframe portrait" src="resources/mobile_portrait.jpg">
+                    <div class="card-item border"></div>
+                    <p class="card-item"> Mobiel Display: Landscape</p>
+                    <img class="wireframe landscape" src="resources/mobile_landscape.jpg">
+                    <div class="card-item border"></div>
+                    <p class="card-item"> Desktop Browser</p>
+                    <img class="wireframe desktop" src="resources/desktop.jpg">
+                <div class="card-item border"></div>
+                <p class="card-item" id="card-text">
+                    
+                </p>
+            </div>
+    
+        <div class="card" id="review">
+            <div class="card-item">Peer Review</a></div>
+            
+            <div class="card-item Border"></div>
+            <div class="card-item" id="card-text">
+                    
+            </div>
+        </div>
+            
+           
+            
+            <div class="card-spacer"></div>
+        </div>
+        <div class=content-spacer></div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+           © 2017 | Last Update: 1/28/2017
+        </div>
+    </footer>
+ 
+</body>
+
+</html>
