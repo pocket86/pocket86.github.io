@@ -89,6 +89,14 @@ body{
     height: 20px;
 }
 
+.side-nav-item:nth-child(10){
+    border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
 .side-nav-link{
     text-align: center;
     transition: background-color 0.5s ease;
