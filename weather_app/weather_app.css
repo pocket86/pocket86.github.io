@@ -64,10 +64,11 @@ footer{
 }
 
 .box1{
-    height: 300px;
+    height: 200px;
     width: 100%;
     display: flex;
     justify-content: space-around;
+    border-bottom: 1px solid rgba(160, 160, 160, 0.2);
     
 }
 
@@ -84,15 +85,15 @@ footer{
     width: 100%;
 }
 .temp-large{
-    padding-top: 50px;
+    padding-top: 10px;
     font-size: 130px;
 }
 .degrees{
-    padding-top: 60px;
+    padding-top: 20px;
     font-size: 90px;
 }
 .fnhght{
-    padding-top: 75px;
+    padding-top: 25px;
     font-size: 50px;
     
 }
@@ -106,9 +107,8 @@ footer{
 }
 
 .summary{
-    padding-top: 30px;
     width: 200px;
-    height: 65%;
+    height: 95%;
 }
 
 
@@ -142,19 +142,12 @@ footer{
 
 
 
-
-
-
-
-
-
-
 .box3{
-    background-color: aquamarine;
     display: flex;
     height: 200px;
     text-align: center;
     font-size: 20px;
+    border-bottom: 1px solid rgba(160, 160, 160, 0.2);
 }
 .precipitation{
     width: 50%;
@@ -177,9 +170,31 @@ footer{
 
 
 .box4{
-    background-color: bisque;
-    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    height: 100px;
 }
+
+.logo{
+   
+    height: 80%;
+}
+
+.box5{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 50px;
+}
+.wireframe{
+    width: 40%;
+    height: 40%;
+    
+}
+
+
 
 
 
