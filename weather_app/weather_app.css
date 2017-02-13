@@ -13,15 +13,22 @@ body {
     margin: 0;
 }
 
-@media screen and (min-width: 767px){
+@media screen and (min-width: 767px) and (max-width: 999px){
     .hourly-temp-header{display: flex !important;}
-    .hourly-temp{
-        display: flex !important;
-    }
+    .hourly-temp{width: 100% !important;}
+    .hourly-temps{display: flex !important;}
+    .page-end-spacer{display: inherit !important;}
 }
 
 @media screen and (min-width: 1000px){
+    .hourly-temp-header{display: flex !important;}
+    .hourly-temp{width: 70% !important;}
+    .hourly-temps{display: flex !important;}
     
+    .five-day-forcast{
+        display: flex !important;
+    }
+    .page-end-spacer{display: inherit !important;}
 }
 
 
@@ -198,6 +205,12 @@ footer {
     transform: rotate(140deg);
 }
 
+.responsive-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .hourly-temp-header{
     display: none;
     width: 100%;
@@ -205,10 +218,10 @@ footer {
     justify-content: center;
 }
 
-.hourly-temp{
+.hourly-temps{
     display: none;
     flex-direction: row;
-    margin-left: 20px;
+    width: 100%;
     margin-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -226,6 +239,53 @@ footer {
     min-width: 150px;
 }
 
+.five-day-forcast{
+    display: none;
+    flex-direction: column;
+    border-left: 1px solid rgba(160, 160, 160, 0.2);
+    height: 800px;
+    width: 100%;
+}
+
+.five-day-forcast-header{
+    margin-bottom: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+.five-day-items{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between;
+}
+.five-day-item{
+    font-size: 30px;
+    justify-content: space-around
+}
+
+.single-day{
+    width: 100%;
+    padding-bottom: 0px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.day{
+    width: 40%;
+    padding-top: 10px;
+}
+
+img.five-day-img{
+    width: 20%;
+    height: 20%
+}
+
+.page-end-spacer{
+    display: none;
+    width: 100%;
+    border-top: 2px solid rgba(160, 160, 160, 0.2);
+    margin-bottom: 20px;;
+}
+
 .logo-box {
     margin-top: 10px;
     margin-bottom: 50px;
@@ -235,13 +295,22 @@ footer {
 }
 
 .wireframe-box {
+    margin-left: 40%;
+    margin-right: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     height: auto;
+    margin-top: 30px;
     margin-bottom: 50px;
 }
 
 .wireframe {
     width: 40%;
     height: 40%;
+    padding-bottom: 20px;
+}
+.wireframe.mobile{
+    width: 20%;
+    margin-left: 10%;
 }
