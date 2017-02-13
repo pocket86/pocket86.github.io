@@ -84,7 +84,13 @@ footer {
     flex-direction: column;
 }
 
+.logo {
+    height: 100%;
+    border-bottom: 2px solid rgba(160, 160, 160, 0.2);
+}
+
 .location {
+    margin-top: 0px;
     text-align: center;
 }
 
@@ -226,10 +232,6 @@ footer {
     display: flex;
     justify-content: center;
     height: 100px;
-}
-
-.logo {
-    height: 80%;
 }
 
 .wireframe-box {
