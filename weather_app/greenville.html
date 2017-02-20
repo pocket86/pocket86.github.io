@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Responsive Weather App - Greenville, SC | pocket86.gethub.io</title>
+    <!-- My stylesheet -->
+    <link rel="stylesheet" type="text/css" href="weather_app.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> </head>
+
+<body>
+    <!-- Top Header Bar -->
+    <nav class="top-nav">
+        <div class="top-nav-link"><a class="top-link" href="weather_app.html">Franklin, ID</a></div>
+        <div class="top-nav-link"><a class="top-link" href="#">Greenville, SC</a></div>
+        <div class="top-nav-link"><a class="top-link" href="#">Springfield, IL</a></div>
+    </nav>
+    <!-- Main Content -->
+    <main class="content">
+        <div class="logo-box"> <img class="logo" alt="Simple Cast" src="resources/logo.png"> </div>
+        <h1 class="location">Greenville, SC</h1>
+        <div class="temp-status">
+            <div class="current-temp">
+                <div class="temp-spacer"></div>
+                <div class="temp-large">77</div>
+                <div class="degrees">°</div>
+                <div class=fahrenheit>F</div>
+                <div class="temp-spacer"></div>
+            </div>
+            <div class="current-summary">
+                <div class="spacer"></div> <img class="summary-image" alt="sunny" src="resources/sunny.png">
+                <div class="spacer"></div>
+            </div>
+        </div>
+        <div class="high-low-feelslike">
+            <div class="high-low">
+                <div class="high">84° <span>&#8593;</span></div>
+                <div></div>
+                <div class="low">55° <span>&#8595;</span></div>
+            </div>
+            <div class="feels-like"> Feels Like: 75° </div>
+        </div>
+        <div class="precipitation-wind">
+            <div class="precipitation"> <img class="precipitation-image" alt="precipitation" src="resources/rian.png">
+                <div>Precipitation: 70%</div>
+            </div>
+            <div class="wind"> <img class="arrow" id="west" alt="wind direction" src="resources/wind.png">
+                <div>Wind: 15mph | W</div>
+            </div>
+        </div>
+        <div class="responsive-content">
+            <div class="hourly-temp">
+                <h2 class="hourly-temp-header">Hourly Forcast</h2>
+                <div class="hourly-temps">
+                    <div class="hourly-temp-box"><p>12:00am</p><p>55°</p></div>
+                    <div class="hourly-temp-box"><p>1:00am</p><p>56°</p></div>
+                    <div class="hourly-temp-box"><p>2:00am</p><p>56°</p></div>
+                    <div class="hourly-temp-box"><p>3:00am</p><p>56°</p></div>
+                    <div class="hourly-temp-box"><p>4:00am</p><p>57°</p></div>
+                    <div class="hourly-temp-box"><p>5:00am</p><p>57°</p></div>
+                    <div class="hourly-temp-box"><p>6:00am</p><p>58°</p></div>
+                    <div class="hourly-temp-box"><p>7:00am</p><p>62°</p></div>
+                    <div class="hourly-temp-box"><p>8:00am</p><p>63°</p></div>
+                    <div class="hourly-temp-box"><p>9:00am</p><p>67°</p></div>
+                    <div class="hourly-temp-box"><p>10:00am</p><p>70°</p></div>
+                    <div class="hourly-temp-box"><p>11:00am</p><p>73°</p></div>
+                    <div class="hourly-temp-box"><p>12:00pm</p><p>77°</p></div>
+                    <div class="hourly-temp-box"><p>1:00pm</p><p>80°</p></div>
+                    <div class="hourly-temp-box"><p>2:00pm</p><p>84°</p></div>
+                    <div class="hourly-temp-box"><p>3:00pm</p><p>83°</p></div>
+                    <div class="hourly-temp-box"><p>4:00pm</p><p>83°</p></div>
+                    <div class="hourly-temp-box"><p>5:00pm</p><p>80°</p></div>
+                    <div class="hourly-temp-box"><p>6:00pm</p><p>79°</p></div>
+                    <div class="hourly-temp-box"><p>7:00pm</p><p>74°</p></div>
+                    <div class="hourly-temp-box"><p>8:00pm</p><p>70°</p></div>
+                    <div class="hourly-temp-box"><p>9:00pm</p><p>68°</p></div>
+                    <div class="hourly-temp-box"><p>10:00pm</p><p>60°</p></div>
+                    <div class="hourly-temp-box"><p>11:00pm</p><p>58°</p></div>
+                </div>
+            </div>
+            <div class="five-day-forcast">
+                <h2 class="five-day-forcast-header">5 Day Forcast</h2>
+                <div class="five-day-items">
+                    <div class="five-day-item">
+                        <div class="single-day"><p class="day">Monday: 82°</p><img class="five-day-img" alt="status" src="resources/sunny.png"></div>
+                        <div class="single-day"><p class="day">Tuesday: 81°</p><img class="five-day-img" alt="status" src="resources/sunny.png"></div>
+                        <div class="single-day"><p class="day">Wednesday: 82°</p><img class="five-day-img" alt="status" src="resources/sunny.png"></div>
+                        <div class="single-day"><p class="day">Thursday: 75°</p><img class="five-day-img" alt="status" src="resources/rain_cloud.png"></div>
+                        <div class="single-day"><p class="day">Friday: 70°</p><img class="five-day-img" alt="status" src="resources/rain_cloud.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-end-spacer"></div>
+         <div class="wireframe-box">
+             <img class="wireframe mobile" alt="wireframe" src="../weather_planning_doc/resources/mobile_portrait.jpg">
+             <img class="wireframe" alt="wireframe" src="../weather_planning_doc/resources/mobile_landscape.jpg">
+             <img class="wireframe" alt="wireframe" src="../weather_planning_doc/resources/desktop.jpg">
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div> © 2017 | Last Update: 2/17/2017 </div>
+    </footer>
+</body>
+
+</html>

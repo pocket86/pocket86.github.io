@@ -13,6 +13,8 @@ body {
     margin: 0;
 }
 
+/*********** MEDIA QUERIES ************/
+
 @media screen and (min-width: 767px) and (max-width: 999px){
     .hourly-temp-header{display: flex !important;}
     .hourly-temp{width: 100% !important;}
@@ -202,7 +204,14 @@ footer {
     margin-top: 5px;
     height: 30%;
     margin-bottom: 10px;
-    transform: rotate(140deg);
+}
+
+#southwest{
+     transform: rotate(140deg);
+}
+
+#west{
+     transform: rotate(180deg);
 }
 
 .responsive-content{
