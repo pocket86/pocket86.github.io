@@ -4,10 +4,34 @@
 	<meta charset="UTF-8">
 	<title>Inserting HTML</title>
 	<link rel="stylesheet" href="css/insertingHTML.css">
-	<script src="js/jquery-3.0.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script>
 	$(function(){
 		// jQuery Code goes here
+        
+        var box1 = $('.box1');
+        var box2 = $('.box2');
+        
+        function LeftToRight(){
+            if(box2.html() === ''){
+                //Get content from box1 and put it into box2
+                //Empty out box1
+                box2.html(box1.html());
+                box1.html('');
+            }
+        }
+        $('#LeftToRight').click(LeftToRight);
+        
+        function RightToLeft(){
+            if(box1.html() === ''){
+                //Get content from box2 and put it into box1
+                //Empty out box2
+                box1.html(box2.html());
+                box2.html('');
+            }
+        }
+        $('#RightToLeft').click(RightToLeft);
+        
 
 	})
 	</script>
