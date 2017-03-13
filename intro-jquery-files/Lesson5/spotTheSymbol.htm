@@ -41,6 +41,10 @@
                         statusDisplay.html("Oops!! You Lost the Game!");
                     }
                     $(this).off();
+                }, 
+                mouseleave: function(){
+                    statusDisplay.html("Find the Hand!");
+                    $('.coordinates').html("0,0");
                 }
             })
             
