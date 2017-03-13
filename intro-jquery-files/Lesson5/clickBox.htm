@@ -17,16 +17,25 @@
 //            $(this).addClass('orangeBox');
 //        })
         
-        $(.boxHolder).on({
+        $('.boxHolder').on({
             
             click: function(){
                 //The Click Event
-                $(this).addClass('greenBox');
+                $(this).addClass('greenBox').html($(this).index());
             },
             dblclick: function(){
                 //The Double-Click Event
-                $(this).addClass('orangeBox');
-            }    
+                $(this).addClass('orangeBox').html($(this).index());
+            },
+            mouseenter: function(){
+                //When the mouse pointer enters the region of the list item(s)
+                $(this).css('opacity', 0.3);
+            },
+            mouseleave: function(){
+                //When the mouse pointer leaves the region of the list item(s)
+                $(this).css('opacity', 1.0);
+            }
+            
         }, "li");
         
        
