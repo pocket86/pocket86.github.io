@@ -5,14 +5,30 @@
 	<meta charset="UTF-8">
 	<title>Alcove Digital Systems</title>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/jquery-3.0.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script>
 		$(function () {
 			// All jQuery code goes here
-
-			$('#alcoveLogo').css('opacity', 0.4);
+            
+			//$('#alcoveLogo').css('opacity', 0.4);
 
 			$('.servicesBtn').css('color', '#FFF');
+            
+            
+            $('button').css('border', '1px solid red');
+            $('h2').css('border', '1px solid red');
+            
+            $('input[name="nameVal"]').css('border', '1px solid red');
+            $('input[name!="phoneNum"]').css('border', '1px solid red');
+            $('input[name*="Num"]').css('border', '1px solid red');
+            $('input[name$="Val"]').css('border', '1px solid red');
+            
+            //$('#alcoveLogo').next().css('background-color', 'rgba(255, 0, 0, 0.2)')
+            //$('.box1').nextAll().css('background-color', 'rgba(255, 0, 0, 0.2)')
+            //$('.header').children().css('background-color', 'rgba(255, 0, 0, 0.2)')
+            //$('.navigation > li:eq(2)').parent().css('opacity', '0.3');
+            $('.servicesBtn').closest('div').css('background-color', 'rgba(255, 0, 0, 0.2)')
+            
 		})
 	</script>
 </head>
