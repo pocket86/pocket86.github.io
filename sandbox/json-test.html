@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JSON test</title>
+
+        <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+        <script>
+            $(document).ready(function($) {
+                $.ajax({
+                    url : "./weather.json",
+                    dataType : "json",
+                    success : function(data) {
+                        var location = data['Franklin']['City'];
+                        var temp_f = data['Franklin']['High'];
+                        //alert("Current temperature in " + location + " is: " + temp_f)
+                        var loc = $('#h1');
+                        var temp = $('#h2');
+                        var message = $('p');
+
+                        loc.html(location);
+                        temp.html(temp_f);
+                        message.html('This is some example text');
+                    }
+                });
+            });
+        </script>
+
+    </head>
+
+    <body>
+        <h1 id="h1"></h1>
+        <h2 id="h2"></h2>
+        <p id="p"></p>
+    </body>
+
+</html>
+
+
+
