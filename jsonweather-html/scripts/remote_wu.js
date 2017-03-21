@@ -25,6 +25,28 @@ $(function () {
                 console.log(data);
                 
                 //set the data to some managable vars
+                var location = data.location.city + ", " + data.location.state;
+                
+                $("title").prepend(location + " ");
+                $("cityDisplay").html(location);
+                
+                //get the current temp
+                var curTemp = data.current_observation.temp_f + "°";
+                $("#currentTemp").html(curTemp);
+                console.log(curTemp);
+                
+                var summary = data.current_observation.weather;
+                $("#summary").html(summary);
+                
+                //additional data
+                var feelsLike = data.current_observation.feelslike_f;
+                console.log(feelsLike);
+                var windSpeed = data.current_observation.wind_mph;
+                var windDirection = data.current_observation.wind_dir;
+                
+                $("#add1").html("Feels like: " + feelsLike + "°");
+                $("#add2").html("Wind Speed: " + windSpeed + " mph");
+                $("#add3").html("Wind Direction: " + windDirection);
                 
             }
         });
