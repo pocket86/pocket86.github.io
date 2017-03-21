@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Responsive Weather App - Franklin, ID | pocket86.gethub.io</title>
+    <!-- My stylesheet -->
+    <link rel="stylesheet" type="text/css" href="weather_app.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> </head>
+
+<body>
+    <!-- Top Header Bar -->
+    <nav class="top-nav">
+        <div class="top-nav-link"><a class="top-link" href="#">Franklin, ID</a></div>
+        <div class="top-nav-link"><a class="top-link" href="greenville.html">Greenville, SC</a></div>
+        <div class="top-nav-link"><a class="top-link" href="#">Springfield, IL</a></div>
+    </nav>
+    <!-- Main Content -->
+    <main class="content">
+        <div class="logo-box"> <img class="logo" alt="Simple Cast" src="resources/logo.png"> </div>
+        <h1 class="location"></h1>
+        <div class="temp-status">
+            <div class="current-temp">
+                <div class="temp-spacer"></div>
+                <div class="temp-large">69</div>
+                <div class="degrees">°</div>
+                <div class=fahrenheit>F</div>
+                <div class="temp-spacer"></div>
+            </div>
+            <div class="current-summary">
+                <div class="spacer"></div> <img class="summary-image" alt="sunny" src="resources/sunny.png">
+                <div class="spacer"></div>
+            </div>
+        </div>
+        <div class="high-low-feelslike">
+            <div class="high-low">
+                <div class="high">90° <span>&#8593;</span></div>
+                <div></div>
+                <div class="low">66° <span>&#8595;</span></div>
+            </div>
+            <div class="feels-like"> Feels Like: 66° </div>
+        </div>
+        <div class="precipitation-wind">
+            <div class="precipitation"> <img class="precipitation-image" alt="precipitation" src="resources/rian.png">
+                <div>Precipitation: <span class="precip"></span> inches</div>
+            </div>
+            <div class="wind"> <img class="arrow" id="southwest" alt="wind direction" src="resources/wind.png">
+                <div class="wind-data"></div>
+            </div>
+        </div>
+        <div class="responsive-content">
+            <div class="hourly-temp">
+                <h2 class="hourly-temp-header">Hourly Forcast</h2>
+                <div class="hourly-temps">
+                    <div class="hourly-temp-box"><p>12:00am</p><p class="hr0"></p></div>
+                    <div class="hourly-temp-box"><p>1:00am</p><p class="hr1"></p></div>
+                    <div class="hourly-temp-box"><p>2:00am</p><p class="hr2"></p></div>
+                    <div class="hourly-temp-box"><p>3:00am</p><p class="hr3"></p></div>
+                    <div class="hourly-temp-box"><p>4:00am</p><p class="hr4"></p></div>
+                    <div class="hourly-temp-box"><p>5:00am</p><p class="hr5"></p></div>
+                    <div class="hourly-temp-box"><p>6:00am</p><p class="hr6"></p></div>
+                    <div class="hourly-temp-box"><p>7:00am</p><p class="hr7"></p></div>
+                    <div class="hourly-temp-box"><p>8:00am</p><p class="hr8"></p></div>
+                    <div class="hourly-temp-box"><p>9:00am</p><p class="hr9"></p></div>
+                    <div class="hourly-temp-box"><p>10:00am</p><p class="hr10"></p></div>
+                    <div class="hourly-temp-box"><p>11:00am</p><p class="hr11"></p></div>
+                    <div class="hourly-temp-box"><p>12:00pm</p><p class="hr12"></p></div>
+                    <div class="hourly-temp-box"><p>1:00pm</p><p class="hr13"></p></div>
+                    <div class="hourly-temp-box"><p>2:00pm</p><p class="hr14"></p></div>
+                    <div class="hourly-temp-box"><p>3:00pm</p><p class="hr15"></p></div>
+                    <div class="hourly-temp-box"><p>4:00pm</p><p class="hr16"></p></div>
+                    <div class="hourly-temp-box"><p>5:00pm</p><p class="hr17"></p></div>
+                    <div class="hourly-temp-box"><p>6:00pm</p><p class="hr18"></p></div>
+                    <div class="hourly-temp-box"><p>7:00pm</p><p class="hr19"></p></div>
+                    <div class="hourly-temp-box"><p>8:00pm</p><p class="hr20"></p></div>
+                    <div class="hourly-temp-box"><p>9:00pm</p><p class="hr21"></p></div>
+                    <div class="hourly-temp-box"><p>10:00pm</p><p class="hr22"></p></div>
+                    <div class="hourly-temp-box"><p>11:00pm</p><p class="hr23"></p></div>
+                </div>
+            </div>
+            <div class="five-day-forcast">
+                <h2 class="five-day-forcast-header">5 Day Forcast</h2>
+                <div class="five-day-items">
+                    <div class="five-day-item">
+                        <div class="single-day"><p class="day monday"></p><img class="five-day-img monday-img" alt="status" src="resources/sunny.png"></div>
+                        <div class="single-day"><p class="day tuesday"></p><img class="five-day-img tuesday-img" alt="status" src="resources/sunny.png"></div>
+                        <div class="single-day"><p class="day wednesday"></p><img class="five-day-img wednesday-img" alt="status" src="resources/sunny.png"></div>
+                        <div class="single-day"><p class="day thursday"></p><img class="five-day-img thursday-img" alt="status" src="resources/rain_cloud.png"></div>
+                        <div class="single-day"><p class="day friday"></p><img class="five-day-img friday-img" alt="status" src="resources/rain_cloud.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-end-spacer"></div>
+         <div class="wireframe-box">
+             <img class="wireframe mobile" alt="wireframe" src="../weather_planning_doc/resources/mobile_portrait.jpg">
+             <img class="wireframe" alt="wireframe" src="../weather_planning_doc/resources/mobile_landscape.jpg">
+             <img class="wireframe" alt="wireframe" src="../weather_planning_doc/resources/desktop.jpg">
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div> © 2017 | Last Update: 2/2/2017 </div>
+    </footer>
+    <script 
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous">
+    </script>
+    <script src="weather.js"></script>
+</body>
+
+</html>
