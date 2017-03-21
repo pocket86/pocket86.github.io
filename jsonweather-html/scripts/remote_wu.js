@@ -28,7 +28,7 @@ $(function () {
                 var location = data.location.city + ", " + data.location.state;
                 
                 $("title").prepend(location + " ");
-                $("cityDisplay").html(location);
+                $("#cityDisplay").html(location);
                 
                 //get the current temp
                 var curTemp = data.current_observation.temp_f + "°";
