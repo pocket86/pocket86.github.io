@@ -18,7 +18,4 @@ $('#query').keyup(function(){
         output += '</ol>';
         $("#searchResults").html(output); // send results to the page
     }); // end getJSON
-
-
-
 }); // end keyup
