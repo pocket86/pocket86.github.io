@@ -11,7 +11,7 @@ $('#query').keyup(function(){
         $.each(data.RESULTS, function(key, val) {
             if (val.name.search(rExp) != -1) {
                 output += '<li>';
-                output += '<a href="//www.wunderground.com/api/f2d1c7032fa51e18/geolookup/conditions/forecast/hourly' + val.l + '" title="See results for ' + val.name + '">' + val.name + '</a>';
+                output += '<a href="https://api.wunderground.com/api/f2d1c7032fa51e18/geolookup/conditions/forecast/hourly' + val.l + '.json" title="Show weather for ' + val.name + '">' + val.name + '</a>';
                 output += '</li>';
             }
         }); // end each
@@ -21,55 +21,25 @@ $('#query').keyup(function(){
 
         // Intercept the menu link clicks
         $("#searchResults").on("click", "a", function (evt) {
-          evt.preventDefault();
-          // With the text value get the needed value from the weather.json file
-            
-          var href = $(this).attr('href');
-            href = "https:" + href + ".json";
-          getData(href);
+            evt.preventDefault();
+            //now grab the URL and send it off to the api to get our data!
+            var href = $(this).attr('href');
+            getWeather(href);
         });
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
     }); // end getJSON
 }); // end keyup
 
 
-// Get weather data from wunderground.com
-function getData(input) {
-  // Get the data from the wunderground API
-  $.ajax({
-    url: "//api.wunderground.com/api/f2d1c7032fa51e18/geolookup/conditions/q/"
-    + input + ".json"
-    , dataType: "jsonp"
-    , success: function (data) {
-      console.log(data);
-      var location = data.location.city + ', ' + data.location.state;
-      var temp_f = data.current_observation.temp_f;
-      console.log('Location is: ' + location);
-      console.log('Temp is: ' + temp_f);
-      $("#cityDisplay").text(location);
-      $("title").html(location + " | Weather Center");
-      $("#currentTemp").html(Math.round(temp_f) + '°');
-      $("#summary").text(toTitleCase(data.current_observation.icon));
-      $("#cover").fadeOut(250);
-    }
-  });
-}
+
 
 // Get the data from the wunderground API
-    function getData(href) {
+    function getWeather(href) {
         console.log("The href: " + href);
         $.getJSON(href, function (data) {
                 //make sure we get something back
                 console.log("the data: " + data);
+                //hide the results list...
+                $("#searchResults").hide();
                 
                 //set the data to some managable vars
                 var location = data.location.city + ", " + data.location.state;
