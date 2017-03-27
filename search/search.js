@@ -1,5 +1,8 @@
 $('#query').keyup(function(){
     // All code will be inside of this block
+    
+    //if the resulsts list is hidden, show it again
+    $("#searchResults").show();
     var value = $('#query').val();
     var rExp = new RegExp(value, "i");
 
