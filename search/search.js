@@ -1,6 +1,6 @@
 $('#query').keyup(function(){
     // All code will be inside of this block
-    
+
     //if the resulsts list is hidden, show it again
     $("#searchResults").show();
     var value = $('#query').val();
@@ -20,7 +20,7 @@ $('#query').keyup(function(){
         }); // end each
         output += '</ol>';
         $("#searchResults").html(output); // send results to the page
-        
+
 
         // Intercept the menu link clicks
         $("#searchResults").on("click", "a", function (evt) {
@@ -43,7 +43,7 @@ $('#query').keyup(function(){
                 console.log("the data: " + data);
                 //hide the results list...
                 $("#searchResults").hide();
-                
+
                 //set the data to some managable vars
                 var location = data.location.city + ", " + data.location.state;
                 $('.location').html(location);
@@ -68,7 +68,7 @@ $('#query').keyup(function(){
                 var windSpeed = data.current_observation.wind_mph;
                 var windDirection = data.current_observation.wind_dir;
                 $('.wind-data').html("Wind: " + windSpeed + "mph | " + windDirection);
-                
+
                 //hourly temps
                 var hourlyArray = data.hourly_forecast;
                 $('.hr0').html(hourlyArray[0].temp.english + "°");
@@ -95,28 +95,28 @@ $('#query').keyup(function(){
                 $('.hr21').html(hourlyArray[21].temp.english + "°");
                 $('.hr22').html(hourlyArray[22].temp.english + "°");
                 $('.hr23').html(hourlyArray[23].temp.english + "°");
-                
+
                 //5 day forcast
                 var fiveDayArray = data.forecast.simpleforecast.forecastday;
                 $('.monday').html("Monday: " + fiveDayArray[0].high.fahrenheit + "°");
                 $('.monday-img').attr('src', fiveDayArray[0].icon_url);
-                
+
                 $('.tuesday').html("Tuesday: " + fiveDayArray[1].high.fahrenheit + "°");
                 $('.tuesday-img').attr('src', fiveDayArray[1].icon_url);
-                
+
                 $('.wednesday').html("Wednesday: " + fiveDayArray[2].high.fahrenheit + "°");
                 $('.wednesday-img').attr('src', fiveDayArray[2].icon_url);
-                
+
                 $('.thursday').html("Thursday: " + fiveDayArray[3].high.fahrenheit + "°");
                 $('.thursday-img').attr('src', fiveDayArray[3].icon_url);
-                
+
                 $('.friday').html("Friday: " + fiveDayArray[1].high.fahrenheit + "°");
                 $('.friday-img').attr('src', fiveDayArray[1].icon_url);
-               
+
             });
         };
         $("#cover").fadeOut(250);
-    
+
 
 
   // A function for changing a string to TitleCase
