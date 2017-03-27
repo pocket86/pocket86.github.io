@@ -3,7 +3,7 @@ $('#query').keyup(function(){
     var value = $('#query').val();
     var rExp = new RegExp(value, "i");
 
-    $.getJSON("https://autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function (data) {
+    $.getJSON("//autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function (data) {
         console.log(data);
 
         // Begin building output
@@ -11,12 +11,33 @@ $('#query').keyup(function(){
         $.each(data.RESULTS, function(key, val) {
             if (val.name.search(rExp) != -1) {
                 output += '<li>';
-                output += '<a href="//www.wunderground.com' + val.l + '" title="See results for ' + val.name + '">' + val.name + '</a>';
+                output += '<a href="//www.wunderground.com/api/f2d1c7032fa51e18/geolookup/conditions/forecast/hourly' + val.l + '" title="See results for ' + val.name + '">' + val.name + '</a>';
                 output += '</li>';
             }
         }); // end each
         output += '</ol>';
         $("#searchResults").html(output); // send results to the page
+        
+
+        // Intercept the menu link clicks
+        $("#searchResults").on("click", "a", function (evt) {
+          evt.preventDefault();
+          // With the text value get the needed value from the weather.json file
+            
+          var href = $(this).attr('href');
+            href = "https:" + href + ".json";
+          getData(href);
+        });
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }); // end getJSON
 }); // end keyup
 
@@ -25,7 +46,7 @@ $('#query').keyup(function(){
 function getData(input) {
   // Get the data from the wunderground API
   $.ajax({
-    url: "https://api.wunderground.com/api/f2d1c7032fa51e18/geolookup/conditions/q/"
+    url: "//api.wunderground.com/api/f2d1c7032fa51e18/geolookup/conditions/q/"
     + input + ".json"
     , dataType: "jsonp"
     , success: function (data) {
@@ -43,19 +64,8 @@ function getData(input) {
   });
 }
 
-// Intercept the menu link clicks
-$("#searchResults").on("click", "a", function (evt) {
-  evt.preventDefault();
-  // With the text value get the needed value from the weather.json file
-  var href = $(this).attr('href');
-  getData(href);
-});
-
-
-
 // Get the data from the wunderground API
     function getData(href) {
-        href = "https:" + href;
         console.log("The href: " + href);
         $.getJSON(href, function (data) {
                 //make sure we get something back
