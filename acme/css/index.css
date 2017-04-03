@@ -1,0 +1,43 @@
+body{
+    background-image: url('../images/site/background.jpg');
+    background-image: no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+main{
+    height: 500px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: white;
+}
+
+header #logo{
+    width: 30%;
+    min-width: 200px;
+    max-height: 220px
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    background-color: red;
+    margin-top: 30px;
+    height: 60px;
+}
+
+nav .navLink{
+    width: 10%;
+    height: 84%;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    transition: background-color 0.2s ease;
+}
+nav .navLink:hover{
+    background-color: lightcoral;
+}
