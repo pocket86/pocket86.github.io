@@ -8,6 +8,8 @@ body{
 main{
     height: auto;
     width: 90%;
+    max-width: 1000px;
+    min-width: 580px;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
@@ -16,7 +18,9 @@ main{
 header #logo{
     width: 30%;
     min-width: 200px;
-    max-height: 220px
+    max-height: 220px;
+    padding: 20px;
+    padding-bottom: 0px;
 }
 
 nav{
@@ -58,21 +62,27 @@ div#homePage{
 }
 
 #homePage #feature{
+    background-image: url("../images/site/feature.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    min-height: 450px;
 }
 
-img#acmeRocket{
-    position: relative;
-    width: 100%;
-    max-width: 100%;
+div#heroContainer:nth-child(1){
+    width: 50%;
 }
-div#hero{
-    position: absolute;
-    bottom: 10%;
-    right: 20%;
-}
-#hero ul{
+
+#heroContainer ul{
+    padding-left: 50%;
+    padding-right: 5px;
     list-style: none;
-    font-size: 25px;
+    font-size: auto;
+    line-height: 30px;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /************************************
