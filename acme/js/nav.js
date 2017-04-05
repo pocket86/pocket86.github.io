@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     $.getJSON("../js/acme.json", function (data) {
         console.log(data);   
-        var output = '<ul>';
+        var output = '<ul><li id="linkList"><a class="navLink" id="Home" href="#">Home</a>';
         $.each(data, function (key, value) {
             output += '<li>';
             output += '<a  class="navLink" href="#" id="' + key + '">' + key + '</a>';
