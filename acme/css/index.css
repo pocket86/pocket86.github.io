@@ -1,0 +1,113 @@
+body{
+    background-image: url('../images/site/background.jpg');
+    background-image: no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+main{
+    height: auto;
+    width: 90%;
+    max-width: 1000px;
+    min-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+header #logo{
+    width: 30%;
+    min-width: 200px;
+    max-height: 220px;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    background-color: red;
+    margin-top: 30px;
+    height: 60px;
+}
+
+nav .navLink{
+    width: 10%;
+    min-width: 120px;
+    height: 84%;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    
+}
+nav .navLink:hover{
+    background-color: lightcoral;
+}
+
+h1#contentTitle{
+    font-size: 50px;
+    padding-left: 20px;
+}
+
+/************************************
+* HOME PAGE CSS
+*************************************/
+div#homePage{
+    display: flex;
+    flex-direction: column;
+}
+
+#homePage #feature{
+    background-image: url("../images/site/feature.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    min-height: 450px;
+}
+
+div#heroContainer:nth-child(1){
+    width: 50%;
+}
+
+#heroContainer ul{
+    padding-left: 50%;
+    padding-right: 5px;
+    list-style: none;
+    font-size: auto;
+    line-height: 30px;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/************************************
+* ANVILS PAGE CSS
+*************************************/
+
+/************************************
+* EXPLOSIVES PAGE CSS
+*************************************/
+
+/************************************
+* DECOYS PAGE CSS
+*************************************/
+
+/************************************
+* TRAPS PAGE CSS
+*************************************/
+
+
+
+
+
+footer{
+    border-top: 1px solid rgba(160, 160, 160, 4.2);
+    padding-top: 10px;
+    text-align: center;
+    font-size: 20px
+}
