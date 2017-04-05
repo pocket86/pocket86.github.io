@@ -1,3 +1,21 @@
+$(document).ready(function () {
+
+
+    $.getJSON("../js/acme.json", function (data) {
+        console.log(data);   
+        var output = '<ul>';
+        $.each(data, function (key, value) {
+            output += '<li>';
+            output += '<a  class="navLink" href="#" id="' + key + '">' + key + '</a>';
+            output += '</li>';
+        }); // end each
+        output += '</ul>';
+        $("nav").html(output); // send results to the page
+    });
+    // end getJSON
+});
+
+
 $("nav").on("click", "a", function (evt) {
             evt.preventDefault();
             var id = evt.target.id;
@@ -11,10 +29,6 @@ $("nav").on("click", "a", function (evt) {
                 loadDynamicPage(id);
             }
         });
-
-
-
-
 
 function loadDynamicPage(id){
     
@@ -34,6 +48,9 @@ function loadDynamicPage(id){
         
         console.log("Changing the content...");
         //change the page content
+        
+        document.title = id + " | ACME.INC";
+        
         $("#contentTitle").html(page.name);
         $("#pic").attr('src', page.path);
         $("#description").html(page.description);

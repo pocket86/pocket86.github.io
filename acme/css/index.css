@@ -1,6 +1,5 @@
 body{
     background-image: url('../images/site/background.jpg');
-    background-image: no-repeat center center fixed;
     background-size: cover;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -28,19 +27,30 @@ nav{
     flex-direction: row;
     justify-content:flex-start;
     background-color: red;
-    margin-top: 30px;
+    margin-top: 20px;
     height: 60px;
 }
 
-nav .navLink{
-    width: 10%;
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 50%;
+    margin-top: 0px;
+    height: 60px;
+    
+}
+
+.navLink{
+    margin-left: 0px;
+    margin-right: 30px;
     min-width: 120px;
-    height: 84%;
-    padding-top: 10px;
+    padding-top: 0px;
     text-align: center;
     color: white;
-    font-size: 30px;
+    font-size: 50px;
     text-decoration: none;
+    
     transition: background-color 0.2s ease;
     
 }
@@ -70,15 +80,15 @@ div#homePage{
     min-height: 450px;
 }
 
-div#heroContainer:nth-child(1){
+div.heroContainer:nth-child(1){
     width: 50%;
 }
 
-div#heroContainer:nth-child(2){
+div.heroContainer:nth-child(2){
     padding-right: 20px;
 }
 
-#heroContainer ul{
+.heroContainer ul{
     padding-left: 50%;
     padding-right: 25px;
     list-style: none;
@@ -106,12 +116,12 @@ div#recipeContainer{
     width: 50%;   
 }
 
-div#recipeBox{
+div.recipeBox{
     display: flex;
     flex-direction: row;
     height: 50%;
 }
-div#recipe{
+div.recipe{
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -119,7 +129,7 @@ div#recipe{
     text-align: center;
 }
 
-img#recipe{
+img.recipe{
     width: 90%;
     height: auto;
     padding-top: 5px;
@@ -127,7 +137,7 @@ img#recipe{
     margin-right: auto;
 }
 
-a#recipeLink{
+a.recipeLink{
     padding-top: 5%;
     font-size: 20px
 }

@@ -5,75 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width">
-    <title>ACME.inc | pocket86.gethub.io</title>
-
+    <title>ACME.INC</title>
     <!-- My stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-
-    
-    
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> </head>
 
 <body>
-    
     <!-- Main -->
     <main>
-        
-        <header>
-            <img id="logo" src="images/site/logo.png">
-        </header>
-        
-        <nav>
-            <a class="navLink" id="Home"       href="#">Home</a>
-            <a class="navLink" id="Anvils"     href="#">Anvils</a>
-            <a class="navLink" id="Explosives" href="#">Explosives</a>
-            <a class="navLink" id="Decoys"     href="#">Decoys</a>
-            <a class="navLink" id="Traps"      href="#">Traps</a>
+        <header> <img id="logo" alt="ACME Lovo" src="images/site/logo.png"> </header>
+        <nav id="page-nav">
+            <ul>
+                <li id="linkList"><a href="#" title="Home">Home</a></li>
+            </ul>
         </nav>
-        
         <h1 id="contentTitle">Welcome to Acme!</h1>
         <div id="content">
             <!-- ****** HOME PAGE ****** -->
             <div id="homePage">
                 <div id="feature">
-                    <div id="heroContainer"></div>
-                    <div id="heroContainer">
+                    <div class="heroContainer"></div>
+                    <div class="heroContainer">
                         <ul>
-                            <li><h2>Acme Rocket</h2></li>
+                            <li>
+                                <h2>Acme Rocket</h2></li>
                             <li>Quick lighting fuse</li>
                             <li>NHTSA approved seat belts</li>
                             <li>Mobile launch stand included</li>
-                            <li><a href="#"><img id="actionbtn" alt="Add to cart button" src="images/site/iwantit.gif"></a></li>
+                            <li>
+                                <a href="#"><img id="actionbtn" alt="Add to cart button" src="images/site/iwantit.gif"></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div id="recipesAndReviewsHeader">
                     <h1>Featured Recipes</h1>
-                    <h1>Acme Rocket Reviews</h1>
-                </div>
+                    <h1>Acme Rocket Reviews</h1> </div>
                 <div id="recipesAndReviews">
                     <div id="recipeContainer">
-                        <div id="recipeBox">
-                            <div id="recipe">
-                                <img id="recipe" src="images/recipes/bbqsand.jpg">
-                                <a id="recipeLink" href="#">Pulled Roadrunner BBQ</a>
-                            </div>
-                            <div id="recipe">
-                                <img id="recipe" src="images/recipes/potpie.jpg">
-                                <a id="recipeLink" href="#">Roadrunner Pot Pie</a>
-                            </div>   
+                        <div class="recipeBox">
+                            <div class="recipe"> <img class="recipe" alt="Roadrunner BBQ" src="images/recipes/bbqsand.jpg"> <a class="recipeLink" href="#">Pulled Roadrunner BBQ</a> </div>
+                            <div class="recipe"> <img class="recipe" alt="Roadrunner Pot Pie" src="images/recipes/potpie.jpg"> <a class="recipeLink" href="#">Roadrunner Pot Pie</a> </div>
                         </div>
-                        <div id="recipeBox">
-                            <div id="recipe">
-                                <img id="recipe" src="images/recipes/soup.jpg">
-                                <a id="recipeLink" href="#">Roadrunner Soup</a>
-                            </div>
-                            <div id="recipe">
-                                <img id="recipe" src="images/recipes/taco.jpg">
-                                <a id="recipeLink" href="#">Roadrunner Tacos</a>
-                            </div>   
+                        <div class="recipeBox">
+                            <div class="recipe"> <img class="recipe" alt="Roadrunner Soup" src="images/recipes/soup.jpg"> <a class="recipeLink" href="#">Roadrunner Soup</a> </div>
+                            <div class="recipe"> <img class="recipe" alt="Roadrunner Taco" src="images/recipes/taco.jpg"> <a class="recipeLink" href="#">Roadrunner Tacos</a> </div>
                         </div>
                     </div>
                     <div id="reviews">
@@ -86,62 +63,31 @@
                         </ul>
                     </div>
                 </div>
-                
-                
             </div>
-            
             <!-- ****** ANVILS PAGE ****** -->
             <div id="dynamicPages">
-                
                 <div id="dynamicContentContainer">
                     <div id="picAndDescription">
-                        <div id="dynamPic">
-                            <img id="pic" src="">
-                        </div>
+                        <div id="dynamPic"> <img id="pic" alt="product" src="#"> </div>
                         <div id="dynamDes">
                             <p id="description"></p>
-                            <p>
-                                <strong>Made by: </strong><span id="dynamMadeBy"></span>
-                                <br/>
-                                <strong>Reviews: </strong><span id="dynamReviews"></span>
-                            </p>
+                            <p> <strong>Made by: </strong><span id="dynamMadeBy"></span>
+                                <br/> <strong>Reviews: </strong><span id="dynamReviews"></span> </p>
                         </div>
                     </div>
                     <div id="priceBox">
                         <p id="price">Price: $<span id="dynamPrice"></span></p>
                     </div>
-                
                 </div>
-                
-            
             </div>
-            
-            
-            
-            
-            
-        
         </div>
-    
-        
-        
-        
         <!-- Footer -->
-    <footer>
-        &copy; 2017 ACME, All rights reserved.
-        <br/>
-        All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed.
-    </footer>
+        <footer> &copy; 2017 ACME, All rights reserved.
+            <br/> All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed. </footer>
     </main>
-
-   
-    <script 
-        src="https://code.jquery.com/jquery-3.1.1.min.js"
-        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-        crossorigin="anonymous">
-    </script>   
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
+    </script>
     <script src="js/nav.js"></script>
-
 </body>
 
 </html>
