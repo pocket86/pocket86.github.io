@@ -26,14 +26,14 @@
         </header>
         
         <nav>
-            <a class="navLink" href="#" onclick="loadHomePage()">Home</a>
-            <a class="navLink" href="#" onclick="loadAnvilPage()">Anvils</a>
-            <a class="navLink" href="#" onclick="loadExpPage()">Explosives</a>
-            <a class="navLink" href="#" onclick="loadDecoyPage()">Decoys</a>
-            <a class="navLink" href="#" onclick="loadTrapsPage()">Traps</a>
+            <a class="navLink" href="#" onclick="home()">Home</a>
+            <a class="navLink" href="#" onclick="anvils()">Anvils</a>
+            <a class="navLink" href="#" onclick="explosives()">Explosives</a>
+            <a class="navLink" href="#" onclick="decoys()">Decoys</a>
+            <a class="navLink" href="#" onclick="traps()">Traps</a>
         </nav>
         
-        <h1 id="contentTitle">Weocome to Acme!</h1>
+        <h1 id="contentTitle">Welcome to Acme!</h1>
         <div id="content">
             <!-- ****** HOME PAGE ****** -->
             <div id="homePage">
@@ -48,8 +48,46 @@
                             <li><a href="#"><img id="actionbtn" alt="Add to cart button" src="images/site/iwantit.gif"></a></li>
                         </ul>
                     </div>
-                  
                 </div>
+                <div id="recipesAndReviewsHeader">
+                    <h1>Featured Recipes</h1>
+                    <h1>Acme Rocket Reviews</h1>
+                </div>
+                <div id="recipesAndReviews">
+                    <div id="recipeContainer">
+                        <div id="recipeBox">
+                            <div id="recipe">
+                                <img id="recipe" src="images/recipes/bbqsand.jpg">
+                                <a id="recipeLink" href="#">Pulled Roadrunner BBQ</a>
+                            </div>
+                            <div id="recipe">
+                                <img id="recipe" src="images/recipes/potpie.jpg">
+                                <a id="recipeLink" href="#">Roadrunner Pot Pie</a>
+                            </div>   
+                        </div>
+                        <div id="recipeBox">
+                            <div id="recipe">
+                                <img id="recipe" src="images/recipes/soup.jpg">
+                                <a id="recipeLink" href="#">Roadrunner Soup</a>
+                            </div>
+                            <div id="recipe">
+                                <img id="recipe" src="images/recipes/taco.jpg">
+                                <a id="recipeLink" href="#">Roadrunner Tacos</a>
+                            </div>   
+                        </div>
+                    </div>
+                    <div id="reviews">
+                        <ul id="reviewList">
+                            <li>"I don't know how I ever caught roadrunners before this." (9/10)</li>
+                            <li>"That thing was fast!" (4/5)</li>
+                            <li>"Talk about fast delivery." (5/5)</li>
+                            <li>"I didn't even have to pull the meat apart." (4.5/5)</li>
+                            <li>"I'm on my thirtieth one. I love these things!" (5/5)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
             </div>
             
             <!-- ****** ANVILS PAGE ****** -->
@@ -89,7 +127,12 @@
     </main>
 
    
-    
+    <script 
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous">
+    </script>   
+    <script src="js/nav.js"></script>
 
 </body>
 
