@@ -32,8 +32,16 @@ function loadDynamicPage(id){
             page = data.Traps;
         }
         
+        console.log("Changing the content...");
         //change the page content
         $("#contentTitle").html(page.name);
+        $("#pic").attr('src', page.path);
+        $("#description").html(page.description);
+        $("#dynamMadeBy").html(page.manufacturer);
+        $("#dynamReviews").html(page.reviews);
+        $("#dynamPrice").html(page.price);
+        
+        $("#dynamicPages").show();
      
     }); // end getJSON
 }

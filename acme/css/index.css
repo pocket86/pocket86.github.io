@@ -140,6 +140,58 @@ ul#reviewList{
 /************************************
 * DYNAMIC PAGES CSS
 *************************************/
+div#dynamicPages{
+    display: none;
+}
+
+div#dynamicContentContainer{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+div#picAndDescription{
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+}
+
+div#picAndDescription div{
+    width: 50%;
+    height: 100%;
+}
+
+div#dynamPic{
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+p#description{
+    font-size: 25px;
+}
+
+p strong{
+    font-size: 25px;
+}
+
+p span{
+    font-size: 25px;
+}
+
+p#price{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 30px;
+    text-align: right;
+    font-size: 70px;
+    color: red;
+}
+
+span#dynamPrice{
+    font-size: 70px;
+}
 
 
 
