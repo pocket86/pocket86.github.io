@@ -129,7 +129,7 @@ img#recipe{
 
 a#recipeLink{
     padding-top: 5%;
-    font-size: 29px
+    font-size: 20px
 }
 
 ul#reviewList{
@@ -138,25 +138,14 @@ ul#reviewList{
 }
 
 /************************************
-* ANVILS PAGE CSS
+* DYNAMIC PAGES CSS
 *************************************/
+
+
 
 /************************************
-* EXPLOSIVES PAGE CSS
+* FOOTER CSS
 *************************************/
-
-/************************************
-* DECOYS PAGE CSS
-*************************************/
-
-/************************************
-* TRAPS PAGE CSS
-*************************************/
-
-
-
-
-
 footer{
     border-top: 5px solid black;
     padding-top: 10px;
